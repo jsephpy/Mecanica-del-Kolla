@@ -970,14 +970,88 @@ body::before{
   <div class="hero-bracket hero-bracket--br"></div>
 
   <!-- Ghost car SVG -->
-  <div class="hero-car">
-    <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
-      <path d="M80 220 L100 160 L160 120 L320 110 L460 120 L520 160 L560 220 L580 240 L580 270 L560 270 L555 250 Q540 225 510 225 Q480 225 465 250 L455 270 L185 270 L175 250 Q160 225 130 225 Q100 225 85 250 L80 270 L60 270 L60 240 Z M160 120 L190 140 L280 135 L280 115 Z M320 110 L460 120 L450 140 L320 145 Z"/>
-      <!-- wheels -->
-      <circle cx="130" cy="255" r="28" fill="none" stroke="currentColor" stroke-width="6"/>
-      <circle cx="510" cy="255" r="28" fill="none" stroke="currentColor" stroke-width="6"/>
-    </svg>
-  </div>
+<div class="hero-car">
+  <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+    <!-- Cuerpo bajo y aerodinámico tipo Ferrari -->
+    <path d="
+      M 60 210
+      L 80 175
+      L 120 155
+      L 160 130
+      L 200 115
+      L 260 105
+      L 310 100
+      L 370 98
+      L 420 100
+      L 470 108
+      Q 510 112 540 125
+      L 580 140
+      Q 620 155 650 175
+      L 690 185
+      L 720 195
+      L 740 210
+      L 740 235
+      Q 700 230 685 230
+      Q 670 218 648 218
+      Q 620 218 608 230
+      L 430 232
+      Q 418 218 396 218
+      Q 374 218 362 232
+      L 175 232
+      Q 163 218 141 218
+      Q 119 218 107 232
+      Q 90 232 60 235
+      Z
+    "/>
+    <!-- Techo muy bajo y deportivo -->
+    <path d="
+      M 200 115
+      L 230 88
+      L 270 72
+      L 330 64
+      L 400 62
+      L 450 65
+      L 490 75
+      L 530 92
+      L 560 112
+      L 540 125
+      L 470 108
+      L 370 98
+      L 260 105
+      Z
+    " opacity="0.7"/>
+    <!-- Spoiler trasero -->
+    <path d="M 690 185 L 730 170 L 745 178 L 720 195 Z" opacity="0.8"/>
+    <!-- Toma de aire delantera -->
+    <path d="M 60 210 L 40 215 L 38 225 L 62 222 Z" opacity="0.6"/>
+    <!-- Línea lateral baja -->
+    <path d="M 100 210 Q 400 200 700 208" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+    <!-- Ventana lateral -->
+    <path d="
+      M 255 108
+      L 270 82
+      L 330 68
+      L 395 66
+      L 440 70
+      L 480 84
+      L 500 105
+      L 460 108
+      Z
+    " opacity="0.35"/>
+    <!-- Rueda trasera -->
+    <circle cx="630" cy="232" r="34" fill="none" stroke="currentColor" stroke-width="5"/>
+    <circle cx="630" cy="232" r="18" fill="none" stroke="currentColor" stroke-width="3" opacity="0.5"/>
+    <circle cx="630" cy="232" r="5"/>
+    <!-- Rueda delantera -->
+    <circle cx="160" cy="232" r="34" fill="none" stroke="currentColor" stroke-width="5"/>
+    <circle cx="160" cy="232" r="18" fill="none" stroke="currentColor" stroke-width="3" opacity="0.5"/>
+    <circle cx="160" cy="232" r="5"/>
+    <!-- Faro trasero -->
+    <path d="M 720 195 L 740 200 L 738 212 L 718 208 Z" opacity="0.9"/>
+    <!-- Faro delantero -->
+    <path d="M 62 205 L 42 210 L 40 220 L 63 216 Z" opacity="0.9"/>
+  </svg>
+</div>
 
   <!-- BG ghost word -->
   <div class="hero-bg-text">KOLLA</div>
