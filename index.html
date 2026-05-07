@@ -971,85 +971,165 @@ body::before{
 
   <!-- Ghost car SVG -->
 <div class="hero-car">
-  <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-    <!-- Cuerpo bajo y aerodinámico tipo Ferrari -->
+  <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+
+    <!-- ========= CABINA ========= -->
+    <!-- Cuerpo principal cabina -->
     <path d="
-      M 60 210
-      L 80 175
-      L 120 155
-      L 160 130
-      L 200 115
-      L 260 105
-      L 310 100
-      L 370 98
-      L 420 100
-      L 470 108
-      Q 510 112 540 125
-      L 580 140
-      Q 620 155 650 175
-      L 690 185
-      L 720 195
-      L 740 210
-      L 740 235
-      Q 700 230 685 230
-      Q 670 218 648 218
-      Q 620 218 608 230
-      L 430 232
-      Q 418 218 396 218
-      Q 374 218 362 232
-      L 175 232
-      Q 163 218 141 218
-      Q 119 218 107 232
-      Q 90 232 60 235
+      M 60 260
+      L 60 155
+      Q 62 130 75 118
+      L 100 100
+      L 130 88
+      L 160 82
+      L 220 80
+      L 260 82
+      Q 290 85 305 100
+      L 320 118
+      L 328 140
+      L 330 260
       Z
     "/>
-    <!-- Techo muy bajo y deportivo -->
+
+    <!-- Techo elevado (alerón cabina) -->
     <path d="
-      M 200 115
-      L 230 88
-      L 270 72
-      L 330 64
-      L 400 62
-      L 450 65
-      L 490 75
-      L 530 92
-      L 560 112
-      L 540 125
-      L 470 108
-      L 370 98
-      L 260 105
+      M 115 82
+      L 112 65
+      L 270 63
+      L 268 80
       Z
-    " opacity="0.7"/>
-    <!-- Spoiler trasero -->
-    <path d="M 690 185 L 730 170 L 745 178 L 720 195 Z" opacity="0.8"/>
-    <!-- Toma de aire delantera -->
-    <path d="M 60 210 L 40 215 L 38 225 L 62 222 Z" opacity="0.6"/>
-    <!-- Línea lateral baja -->
-    <path d="M 100 210 Q 400 200 700 208" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+    " opacity="0.9"/>
+
+    <!-- Parabrisas -->
+    <path d="
+      M 290 105
+      L 305 125
+      L 310 150
+      L 255 150
+      L 255 88
+      L 270 86
+      Z
+    " opacity="0.3"/>
+
     <!-- Ventana lateral -->
     <path d="
-      M 255 108
-      L 270 82
-      L 330 68
-      L 395 66
-      L 440 70
-      L 480 84
-      L 500 105
-      L 460 108
+      M 130 90
+      L 240 88
+      L 240 148
+      L 130 148
       Z
-    " opacity="0.35"/>
-    <!-- Rueda trasera -->
-    <circle cx="630" cy="232" r="34" fill="none" stroke="currentColor" stroke-width="5"/>
-    <circle cx="630" cy="232" r="18" fill="none" stroke="currentColor" stroke-width="3" opacity="0.5"/>
-    <circle cx="630" cy="232" r="5"/>
-    <!-- Rueda delantera -->
-    <circle cx="160" cy="232" r="34" fill="none" stroke="currentColor" stroke-width="5"/>
-    <circle cx="160" cy="232" r="18" fill="none" stroke="currentColor" stroke-width="3" opacity="0.5"/>
-    <circle cx="160" cy="232" r="5"/>
-    <!-- Faro trasero -->
-    <path d="M 720 195 L 740 200 L 738 212 L 718 208 Z" opacity="0.9"/>
+    " opacity="0.3"/>
+
+    <!-- Espejo retrovisor -->
+    <path d="M 318 108 L 338 104 L 340 118 L 318 120 Z" opacity="0.9"/>
+
+    <!-- Detalle parrilla frontal -->
+    <path d="
+      M 318 160
+      L 340 158
+      L 342 220
+      L 318 222
+      Z
+    " opacity="0.85"/>
+
     <!-- Faro delantero -->
-    <path d="M 62 205 L 42 210 L 40 220 L 63 216 Z" opacity="0.9"/>
+    <path d="M 320 225 L 345 222 L 346 240 L 320 242 Z" opacity="0.95"/>
+
+    <!-- Parachoques delantero -->
+    <path d="
+      M 315 245
+      L 350 242
+      L 352 265
+      L 315 265
+      Z
+    "/>
+
+    <!-- Escalón subida cabina -->
+    <path d="M 62 220 L 58 220 L 55 260 L 62 260 Z" opacity="0.8"/>
+    <path d="M 62 235 L 48 235 L 48 248 L 62 248 Z" opacity="0.8"/>
+
+    <!-- Tanque combustible -->
+    <rect x="330" y="195" width="55" height="60" rx="8" opacity="0.85"/>
+
+    <!-- Tubo de escape vertical -->
+    <rect x="268" y="30" width="12" height="52" rx="4"/>
+    <ellipse cx="274" cy="30" rx="8" ry="5"/>
+
+    <!-- Rueda delantera cabina -->
+    <circle cx="135" cy="270" r="38"/>
+    <circle cx="135" cy="270" r="22" fill="#0f0f0f"/>
+    <circle cx="135" cy="270" r="10" fill="currentColor"/>
+    <!-- rayos rueda -->
+    <line x1="135" y1="248" x2="135" y2="292" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="113" y1="270" x2="157" y2="270" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="119" y1="254" x2="151" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="151" y1="254" x2="119" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+
+    <!-- Rueda trasera cabina (doble) -->
+    <circle cx="292" cy="270" r="38"/>
+    <circle cx="292" cy="270" r="22" fill="#0f0f0f"/>
+    <circle cx="292" cy="270" r="10" fill="currentColor"/>
+    <line x1="292" y1="248" x2="292" y2="292" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="270" y1="270" x2="314" y2="270" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="276" y1="254" x2="308" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="308" y1="254" x2="276" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+
+    <!-- Segunda llanta trasera cabina (efecto doble) -->
+    <circle cx="306" cy="270" r="34" fill="none" stroke="currentColor" stroke-width="6"/>
+
+    <!-- ========= CHASIS / BASTIDOR ========= -->
+    <rect x="380" y="230" width="480" height="22" rx="3" opacity="0.9"/>
+    <!-- Vigas del chasis -->
+    <rect x="390" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="450" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="520" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="600" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="680" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="760" y="222" width="8" height="38" opacity="0.7"/>
+    <rect x="830" y="222" width="8" height="38" opacity="0.7"/>
+
+    <!-- Quinta rueda (acople) -->
+    <ellipse cx="380" cy="228" rx="32" ry="10" opacity="0.9"/>
+    <rect x="355" y="215" width="55" height="14" rx="3" opacity="0.85"/>
+
+    <!-- Rueda eje trasero 1 izq -->
+    <circle cx="590" cy="272" r="36"/>
+    <circle cx="590" cy="272" r="20" fill="#0f0f0f"/>
+    <circle cx="590" cy="272" r="9" fill="currentColor"/>
+    <line x1="590" y1="252" x2="590" y2="292" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="570" y1="272" x2="610" y2="272" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="576" y1="258" x2="604" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="604" y1="258" x2="576" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <!-- doble llanta -->
+    <circle cx="604" cy="272" r="32" fill="none" stroke="currentColor" stroke-width="6"/>
+
+    <!-- Rueda eje trasero 2 -->
+    <circle cx="700" cy="272" r="36"/>
+    <circle cx="700" cy="272" r="20" fill="#0f0f0f"/>
+    <circle cx="700" cy="272" r="9" fill="currentColor"/>
+    <line x1="700" y1="252" x2="700" y2="292" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="680" y1="272" x2="720" y2="272" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="686" y1="258" x2="714" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="714" y1="258" x2="686" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <!-- doble llanta -->
+    <circle cx="714" cy="272" r="32" fill="none" stroke="currentColor" stroke-width="6"/>
+
+    <!-- Rueda eje trasero 3 -->
+    <circle cx="810" cy="272" r="36"/>
+    <circle cx="810" cy="272" r="20" fill="#0f0f0f"/>
+    <circle cx="810" cy="272" r="9" fill="currentColor"/>
+    <line x1="810" y1="252" x2="810" y2="292" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="790" y1="272" x2="830" y2="272" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="796" y1="258" x2="824" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <line x1="824" y1="258" x2="796" y2="286" stroke="#0f0f0f" stroke-width="3"/>
+    <!-- doble llanta -->
+    <circle cx="824" cy="272" r="32" fill="none" stroke="currentColor" stroke-width="6"/>
+
+    <!-- Guarda barro trasero -->
+    <path d="M 560 236 Q 580 220 620 220 L 620 236 Z" opacity="0.8"/>
+    <path d="M 670 236 Q 690 220 730 220 L 730 236 Z" opacity="0.8"/>
+    <path d="M 780 236 Q 800 220 840 220 L 840 236 Z" opacity="0.8"/>
+
   </svg>
 </div>
 
