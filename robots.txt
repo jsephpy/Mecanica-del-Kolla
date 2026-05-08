@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jsephpy.github.io/Mecanica-del-Kolla/sitemap.xml
